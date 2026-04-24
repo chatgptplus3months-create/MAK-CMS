@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: chatgptplus3months-create/MAK-CMS
+  name: git-gateway
   branch: main
 
 media_folder: "public/uploads"
