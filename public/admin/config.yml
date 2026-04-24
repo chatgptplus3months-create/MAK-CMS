@@ -1,0 +1,25 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "flyers_page"
+    label: "Flyers Page"
+    files:
+      - label: "Flyers"
+        name: "flyers"
+        file: "public/data/flyers.json"
+        fields:
+          - label: "Flyers"
+            name: "flyers"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Flyer Image", name: "image", widget: "image" }
+              - { label: "Description", name: "description", widget: "text", required: false }
+              - { label: "Display Order", name: "order", widget: "number", default: 1 }
+              - { label: "Visible", name: "visible", widget: "boolean", default: true }
