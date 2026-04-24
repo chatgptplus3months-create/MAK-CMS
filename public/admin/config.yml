@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: chatgptplus3months-create/MAK-CMS
   branch: main
 
 media_folder: "public/uploads"
@@ -20,6 +21,21 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Flyer Image", name: "image", widget: "image" }
-              - { label: "Description", name: "description", widget: "text", required: false }
-              - { label: "Display Order", name: "order", widget: "number", default: 1 }
-              - { label: "Visible", name: "visible", widget: "boolean", default: true }
+              - {
+                  label: "Description",
+                  name: "description",
+                  widget: "text",
+                  required: false,
+                }
+              - {
+                  label: "Display Order",
+                  name: "order",
+                  widget: "number",
+                  default: 1,
+                }
+              - {
+                  label: "Visible",
+                  name: "visible",
+                  widget: "boolean",
+                  default: true,
+                }
