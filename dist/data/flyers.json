@@ -1,0 +1,11 @@
+{
+  "flyers": [
+    {
+      "title": "Sample Flyer",
+      "image": "/uploads/flyers/sample-flyer.jpg",
+      "description": "Replace this with your first flyer from the CMS.",
+      "order": 1,
+      "visible": true
+    }
+  ]
+}
