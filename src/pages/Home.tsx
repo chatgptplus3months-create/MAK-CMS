@@ -39,34 +39,37 @@ const Home = () => {
         ),
         description:
           "From Bodhini spices and pantry essentials to everyday food products, Masar Al Khaleej helps brands grow across Muscat and Dhofar with disciplined market execution.",
+        ctaLabel: "Explore More",
         primaryCta: "/brands",
         secondaryCta: "/contact",
       },
       {
         image: "/images/hero/2.jpg",
-        eyebrow: "Home care and consumer products",
+        eyebrow: "Household & Kitchen Essentials",
         title: (
           <>
-            Smarter <span className="text-brand-red">care solutions</span> for
-            modern retail shelves.
+            Everyday Essentials Built for{" "}
+            <span className="text-brand-red">Modern Living</span>
           </>
         ),
         description:
-          "Kovi Care and related household products are supported with sales coverage, distribution planning, and in-store visibility built for Oman’s fast-moving retail market.",
+          "From cookware and kadai to flasks, plates, and practical home solutions, explore reliable products crafted for daily use and modern retail demand.",
+        ctaLabel: "Explore Products",
         primaryCta: "/brands",
         secondaryCta: "/contact",
       },
       {
         image: "/images/hero/3.jpg",
-        eyebrow: "Coffee, dates and pantry portfolio",
+        eyebrow: "Home Ambience",
         title: (
           <>
-            Curated <span className="text-brand-red">brand portfolios</span>{" "}
-            built for everyday demand.
+            Premium <span className="text-brand-red">Fragrance Collections</span>{" "}
+            for Every Space
           </>
         ),
         description:
-          "From coffee and dates to pantry-led categories, MAK connects quality products with retailers through reliable supply, stronger placement, and consistent follow-through.",
+          "Discover KOVI air fresheners and authentic bakhoor selections designed to bring long-lasting freshness and elegance to homes, offices, and retail shelves.",
+        ctaLabel: "Explore Fragrances",
         primaryCta: "/brands",
         secondaryCta: "/contact",
       },
@@ -81,6 +84,7 @@ const Home = () => {
         ),
         description:
           "Our distribution network supports timely delivery, retail replenishment, and smooth movement of consumer goods across key Oman regions.",
+        ctaLabel: "Explore More",
         primaryCta: "/logistics",
         secondaryCta: "/contact",
       },
@@ -232,7 +236,7 @@ const Home = () => {
                 to={slides[activeSlide].primaryCta}
                 className="group inline-flex items-center justify-center gap-3 bg-brand-red px-7 py-3.5 text-xs font-bold uppercase tracking-[0.18em] text-white transition hover:bg-brand-red-dark"
               >
-                Explore More
+                {slides[activeSlide].ctaLabel}
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
 

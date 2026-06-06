@@ -28,6 +28,8 @@ const Logistics = () => {
             <img
               src={logisticsImage}
               alt="Logistics"
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover rounded-xl"
             />
           </div>

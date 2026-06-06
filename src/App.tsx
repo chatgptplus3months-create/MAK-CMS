@@ -1,15 +1,19 @@
-import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import About from './pages/About';
-import Network from './pages/Network';
-import Brands from './pages/Brands';
-import TradeExecution from './pages/TradeExecution';
-import Logistics from './pages/Logistics';
-import Contact from './pages/Contact';
-import Flyers from './pages/Flyers';
+import React, { useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Network from "./pages/Network";
+import Brands from "./pages/Brands";
+import TradeExecution from "./pages/TradeExecution";
+import Logistics from "./pages/Logistics";
+import Contact from "./pages/Contact";
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -34,7 +38,6 @@ function App() {
             <Route path="/brands" element={<Brands />} />
             <Route path="/trade" element={<TradeExecution />} />
             <Route path="/logistics" element={<Logistics />} />
-            <Route path="/flyers" element={<Flyers />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
@@ -45,4 +48,3 @@ function App() {
 }
 
 export default App;
-

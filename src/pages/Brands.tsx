@@ -1,5 +1,5 @@
 import React from 'react';
-import brandCover from '../assets/brands/coverimagbrand.png';
+import brandCover from '../assets/brands/brandcoverimg.png';
 import ProductBrowser from '../components/ProductBrowser';
 
 const Brands = () => {

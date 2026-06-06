@@ -1,12 +1,16 @@
-import React from "react";
 
 const brands = [
   { name: "Bodhini", logo: "/logos/bodhini.jpeg" },
-  { name: "King Coffee", logo: "/images/king-coffee.png" },
   { name: "Kovi Care", logo: "/images/brands/kovicare.jpg" },
   { name: "Najwa Dates", logo: "/images/najwa-dates.png" },
   { name: "Mom's Pack", logo: "/images/moms-pack-logo.png" },
   { name: "Mom's Love Packs", logo: "/images/moms-love-packs.png" },
+  { name: "Royal Pack", logo: "/logos/Royal Pack.jpeg" },
+  { name: "Odora", logo: "/logos/ChatGPT Image May 2, 2026, 08_58_31 AM.png" },
+  { name: "Superware", logo: "/logos/Superware.png" },
+  { name: "Glacial", logo: "/logos/Glacial.png" },
+  { name: "Kula", logo: "/logos/Kula.png" },
+  { name: "Atlasware", logo: "/logos/Atlasware.png" },
 ];
 
 const BrandCarousel = () => {
@@ -29,6 +33,8 @@ const BrandCarousel = () => {
                 <img
                   src={brand.logo}
                   alt={brand.name}
+                  loading="lazy"
+                  decoding="async"
                   className="h-12 w-auto object-contain mx-auto mb-3"
                   onError={(e) => {
                     e.currentTarget.style.display = "none";
