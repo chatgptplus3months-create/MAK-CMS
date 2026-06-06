@@ -25,7 +25,7 @@ const allGlobs = {
     kula:     import.meta.glob("../assets/products/house hold/kula/*.{png,jpg,jpeg,webp,avif}"),
     atlas:    import.meta.glob("../assets/products/house hold/atlas/*.{png,jpg,jpeg,webp,avif}"),
     glacial:  import.meta.glob("../assets/products/house hold/glacial/*.{png,jpg,jpeg,webp,avif}"),
-    stahil:   import.meta.glob("../assets/products/house hold/stahil/*.{png,jpg,jpeg,webp,avif}"),
+    stahl:    import.meta.glob("../assets/products/house hold/stahl/*.{png,jpg,jpeg,webp,avif}"),
   },
 } as const;
 
@@ -34,7 +34,7 @@ const allLabels = {
   home:      { bakhoor: "Bakhoor", kovai: "Kovi" },
   fragrance: { odora: "Odora" },
   kitchen:   { moms: "Mom's Pack", royal: "Royal Pack" },
-  household: { superware: "Superware", kula: "Kula", atlas: "Atlas", glacial: "Glacial", stahil: "Stahil" },
+  household: { superware: "Superware", kula: "Kula", atlas: "Atlas", glacial: "Glacial", stahl: "Stahl" },
 };
 
 type MainTab = keyof typeof allGlobs;
